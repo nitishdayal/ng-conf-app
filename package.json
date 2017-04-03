@@ -3,9 +3,9 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "webpack-dev-server --port=4200 --env.mode=aot",
+    "start": "webpack-dev-server --port=4200 -p --env.mode=aot",
     "start:jit": "webpack-dev-server --port=4200 --env.mode=jit",
-    "build": "webpack",
+    "build": "webpack -p --env.mode=aot",
     "pretest": "webpack --env.mode=pretest",
     "test": "karma start ./karma.conf.js",
     "e2e": "protractor ./protractor.conf.js",
